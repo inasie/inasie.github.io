@@ -2,6 +2,9 @@
    Contrast skin
    ========================================================================== */
 
+$light-gray                 : mix(#fff, $gray, 50%) !default;
+$lighter-gray               : mix(#fff, $gray, 90%) !default;
+
 /* Colors */
 $text-color: #000 !default;
 $muted-text-color: $text-color !default;
@@ -12,6 +15,8 @@ $link-color: #0000ff !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$code-background-color : $lighter-gray !default;
+$code-background-color-dark : $light-gray !default;
 
 /* contrast syntax highlighting (base16) */
 $base00: #000000 !default;
