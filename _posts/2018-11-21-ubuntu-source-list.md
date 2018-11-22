@@ -2,6 +2,8 @@
 title: Ubuntu 소프트웨어 업데이트 서버를 daum(kakao)로 변경(sources.list)
 date: 2018-11-21 06:00:00 +0900
 last_modified_at: 2018-11-18 06:00:00 +0900
+categories:
+- Ubuntu
 tags:
 - Ubuntu
 - 우분투
