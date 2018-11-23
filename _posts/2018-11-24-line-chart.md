@@ -84,9 +84,9 @@ new Chart(document.getElementById("canvas"), {
             label: '테스트 데이터셋',
             data: [
                 10,
-                20,
+                3,
                 30,
-                40,
+                23,
                 10,
                 5,
                 15
@@ -120,6 +120,9 @@ new Chart(document.getElementById("canvas"), {
             }],
             yAxes: [{
                 display: true,
+                ticks: {
+                    suggestedMin: 0,
+                },
                 scaleLabel: {
                     display: true,
                     labelString: 'y축'
