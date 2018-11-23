@@ -12,16 +12,11 @@ tags:
 - chart.js
 ---
 
-<details><summary> 코드 보기 </summary>
-<p>
-
 ```html
-<div style="width:75%;">
-    <canvas id="line-chart"></canvas>
-</div>
+<canvas id="line-chart" style="width:75%;"></canvas>
 
 <script>
-var myLineChart = new Chart(ctx, {
+var config = new Chart(ctx, {
     type: 'line',
     data: [
         labels: ['1', '2', '3', '4', '5', '6', '7'],
@@ -65,10 +60,8 @@ var myLineChart = new Chart(ctx, {
     }
 });
 
-window.onload = function() {
-    var ctx = document.getElementById('line-chart').getContext('2d');
-    window.myLine = new Chart(ctx, config);
-};
+var ctx = document.getElementById('line-chart').getContext('2d');
+new Chart(ctx, config);
 
 
 </script>
@@ -79,12 +72,10 @@ window.onload = function() {
 
 ## 차트 결과
 
-<div style="width:75%;">
-    <canvas id="line-chart"></canvas>
-</div>
+<canvas id="line-chart" style="width:75%;"></canvas>
 
 <script>
-var myLineChart = new Chart(ctx, {
+var config = new Chart(ctx, {
     type: 'line',
     data: [
         labels: ['1', '2', '3', '4', '5', '6', '7'],
@@ -128,9 +119,7 @@ var myLineChart = new Chart(ctx, {
     }
 });
 
-window.onload = function() {
-    var ctx = document.getElementById('line-chart').getContext('2d');
-    window.myLine = new Chart(ctx, config);
-};
+var ctx = document.getElementById('line-chart').getContext('2d');
+new Chart(ctx, config);
 
 </script>
