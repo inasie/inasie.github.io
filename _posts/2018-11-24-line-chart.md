@@ -21,7 +21,6 @@ tags:
 </div>
 
 <script>
-var ctx = document.getElementById("line-chart");
 var myLineChart = new Chart(ctx, {
     type: 'line',
     data: [
@@ -65,6 +64,12 @@ var myLineChart = new Chart(ctx, {
         }
     }
 });
+
+window.onload = function() {
+    var ctx = document.getElementById('line-chart').getContext('2d');
+    window.myLine = new Chart(ctx, config);
+};
+
 
 </script>
 ```
@@ -79,7 +84,6 @@ var myLineChart = new Chart(ctx, {
 </div>
 
 <script>
-var ctx = document.getElementById("line-chart");
 var myLineChart = new Chart(ctx, {
     type: 'line',
     data: [
@@ -123,5 +127,10 @@ var myLineChart = new Chart(ctx, {
         }
     }
 });
+
+window.onload = function() {
+    var ctx = document.getElementById('line-chart').getContext('2d');
+    window.myLine = new Chart(ctx, config);
+};
 
 </script>
