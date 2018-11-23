@@ -21,8 +21,10 @@ tags:
 <details>
 <summary>확장/축소 버튼</summary>
 <p>
+
 - 이곳에 내용을 적는다
 - 잘 축소 되었는가?
+
 </p>
 </details>
 ```
@@ -30,7 +32,9 @@ tags:
 <details>
 <summary>확장/축소 버튼</summary>
 <p>
+
 - 이곳에 내용을 적는다
 - 잘 축소 되었는가?
+
 </p>
 </details>
