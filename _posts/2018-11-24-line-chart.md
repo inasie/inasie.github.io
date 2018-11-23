@@ -12,24 +12,53 @@ tags:
 - chart.js
 ---
 
-<canvas id="line-chart" width="600" height="800"></canvas>
+<div style="width:75%;">
+    <canvas id="line-chart"></canvas>
+</div>
 
 <script>
 var ctx = document.getElementById("line-chart");
 var myLineChart = new Chart(ctx, {
     type: 'line',
     data: [
-        {
-            x: 10,
-            y: 20
-        },
-        {
-            x: 15,
-            y: 10
-        }
+        labels: ['1', '2', '3', '4', '5', '6', '7'],
+        datasets: [{
+            borderColor: window.chartColors.blue,
+            data: [
+                10, 5, 20, 35, 10, 2, 56
+            ]
+        }]
     ],
     options: {
-        label: "라인 차트 테스트",
+        responsive: true,
+        title: {
+            display: true,
+            text: 'line chart 테스트'
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        }
     }
 });
 
