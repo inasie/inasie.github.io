@@ -12,11 +12,10 @@ tags:
 - chart.js
 ---
 
-```html
 <canvas id="line-chart" width="600" height="400"></canvas>
 
 <script>
-var config = new Chart(ctx, {
+var config = {
     type: 'line',
     data: [
         labels: ['1', '2', '3', '4', '5', '6', '7'],
@@ -28,7 +27,6 @@ var config = new Chart(ctx, {
         }]
     ],
     options: {
-        responsive: true,
         title: {
             display: true,
             text: 'line chart 테스트'
@@ -58,68 +56,65 @@ var config = new Chart(ctx, {
             }]
         }
     }
-});
+};
 
-var ctx = document.getElementById('line-chart').getContext('2d');
+var ctx = document.getElementById('line-chart');
+new Chart(ctx, config);
+
+</script>
+
+## Code 보기
+
+```html
+<canvas id="line-chart" width="600" height="400"></canvas>
+
+<script>
+var config = {
+    type: 'line',
+    data: [
+        labels: ['1', '2', '3', '4', '5', '6', '7'],
+        datasets: [{
+            borderColor: window.chartColors.blue,
+            data: [
+                10, 5, 20, 35, 10, 2, 56
+            ]
+        }]
+    ],
+    options: {
+        title: {
+            display: true,
+            text: 'line chart 테스트'
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        }
+    }
+};
+
+var ctx = document.getElementById('line-chart');
 new Chart(ctx, config);
 
 
 </script>
 ```
-
-</p>
-</details>
-
-## DEMO
-
-<canvas id="line-chart" width="600" height="400"></canvas>
-
-<script>
-var config = new Chart(ctx, {
-    type: 'line',
-    data: [
-        labels: ['1', '2', '3', '4', '5', '6', '7'],
-        datasets: [{
-            borderColor: window.chartColors.blue,
-            data: [
-                10, 5, 20, 35, 10, 2, 56
-            ]
-        }]
-    ],
-    options: {
-        responsive: true,
-        title: {
-            display: true,
-            text: 'line chart 테스트'
-        },
-        tooltips: {
-            mode: 'index',
-            intersect: false,
-        },
-        hover: {
-            mode: 'nearest',
-            intersect: true
-        },
-        scales: {
-            xAxes: [{
-                display: true,
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Month'
-                }
-            }],
-            yAxes: [{
-                display: true,
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Value'
-                }
-            }]
-        }
-    }
-});
-
-var ctx = document.getElementById('line-chart').getContext('2d');
-new Chart(ctx, config);
-
-</script>
