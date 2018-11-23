@@ -33,7 +33,7 @@ new Chart(document.getElementById("canvas"), {
             borderColor: "rgba(255, 201, 14, 0.5)",
             backgroundColor: "rgba(255, 201, 14, 1)",
             fill: false,
-        }
+        }]
     },
     options: {
         responsive: true,
@@ -94,7 +94,7 @@ new Chart(document.getElementById("canvas"), {
             borderColor: "rgba(255, 201, 14, 0.5)",
             backgroundColor: "rgba(255, 201, 14, 1)",
             fill: false,
-        }
+        }]
     },
     options: {
         responsive: true,
