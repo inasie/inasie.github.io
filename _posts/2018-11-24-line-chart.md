@@ -12,9 +12,9 @@ tags:
 - chart.js
 ---
 
-<div style="width:75%;">
-    <canvas id="canvas"></canvas>
-</div>
+updated #1
+
+<canvas id="canvas" width="800" height="600"></canvas>
 
 <script>
     var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -53,7 +53,6 @@ tags:
             }]
         },
         options: {
-            responsive: true,
             title: {
                 display: true,
                 text: 'Chart.js Line Chart'
