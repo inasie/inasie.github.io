@@ -13,7 +13,7 @@ tags:
 ---
 
 ```html
-<canvas id="line-chart" style="width:75%;"></canvas>
+<canvas id="line-chart" width="600" height="400"></canvas>
 
 <script>
 var config = new Chart(ctx, {
@@ -70,9 +70,9 @@ new Chart(ctx, config);
 </p>
 </details>
 
-## 차트 결과
+## DEMO
 
-<canvas id="line-chart" style="width:75%;"></canvas>
+<canvas id="line-chart" width="600" height="400"></canvas>
 
 <script>
 var config = new Chart(ctx, {
