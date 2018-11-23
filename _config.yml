@@ -104,7 +104,7 @@ analytics:
 # Site Author
 author:
   name             : "inasie"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/me.png"
   bio              : "손끝으로 만드는 세상"
   location         : "Hwaseong-si, Gyeonggi-do"
   email            : "inasie@naver.com"
