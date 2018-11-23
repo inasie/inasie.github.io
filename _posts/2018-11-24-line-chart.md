@@ -23,7 +23,7 @@ new Chart(document.getElementById("canvas"), {
     data: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
-            label: 'My First dataset',
+            label: '테스트 데이터셋1',
             data: [
                 10,
                 20,
@@ -33,9 +33,11 @@ new Chart(document.getElementById("canvas"), {
                 5,
                 15
             ],
+            borderColor: "rgba(150, 175, 200, 0.2)",
+            backgroundColor: "rgba(150, 175, 200, 1)",
             fill: false,
         }, {
-            label: 'My Second dataset',
+            label: '테스트 데이터셋2',
             fill: false,
             data: [
                 40,
@@ -46,6 +48,8 @@ new Chart(document.getElementById("canvas"), {
                 35,
                 72
             ],
+            borderColor: "rgba(16, 240, 138, 0.2)",
+            backgroundColor: "rgba(16, 240, 138, 1)",
         }]
     },
     options: {
