@@ -17,13 +17,12 @@ updated #3
 <canvas id="canvas" width="800" height="600"></canvas>
 
 <script>
-var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 new Chart(document.getElementById("canvas"), {
     type: 'line',
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['1', '2', '3', '4', '5', '6', '7'],
         datasets: [{
-            label: '테스트 데이터셋1',
+            label: '테스트 데이터셋',
             data: [
                 10,
                 20,
@@ -33,30 +32,16 @@ new Chart(document.getElementById("canvas"), {
                 5,
                 15
             ],
-            borderColor: "rgba(150, 175, 200, 0.2)",
-            backgroundColor: "rgba(150, 175, 200, 1)",
+            borderColor: "rgba(255, 201, 14, 0.5)",
+            backgroundColor: "rgba(255, 201, 14, 1)",
             fill: false,
-        }, {
-            label: '테스트 데이터셋2',
-            fill: false,
-            data: [
-                40,
-                10,
-                50,
-                60,
-                10,
-                35,
-                72
-            ],
-            borderColor: "rgba(16, 240, 138, 0.2)",
-            backgroundColor: "rgba(16, 240, 138, 1)",
-        }]
+        }
     },
     options: {
         responsive: true,
         title: {
             display: true,
-            text: 'Chart.js Line Chart'
+            text: '라인 차트 테스트'
         },
         tooltips: {
             mode: 'index',
@@ -71,14 +56,14 @@ new Chart(document.getElementById("canvas"), {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Month'
+                    labelString: 'x축'
                 }
             }],
             yAxes: [{
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Value'
+                    labelString: 'y축'
                 }
             }]
         }
