@@ -42,17 +42,9 @@ var config = {
         scales: {
             xAxes: [{
                 display: true,
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Month'
-                }
             }],
             yAxes: [{
                 display: true,
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Value'
-                }
             }]
         }
     }
@@ -63,7 +55,7 @@ new Chart(ctx, config);
 
 </script>
 
-## Code 보기
+## Code
 
 ```html
 <canvas id="line-chart" width="600" height="400"></canvas>
@@ -96,17 +88,9 @@ var config = {
         scales: {
             xAxes: [{
                 display: true,
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Month'
-                }
             }],
             yAxes: [{
                 display: true,
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Value'
-                }
             }]
         }
     }
