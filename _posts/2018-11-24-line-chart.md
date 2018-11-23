@@ -12,12 +12,11 @@ tags:
 - chart.js
 ---
 
-updated #2
+updated #3
 
 <canvas id="canvas" width="800" height="600"></canvas>
 
 <script>
-
 var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 new Chart(document.getElementById("canvas"), {
     type: 'line',
@@ -25,8 +24,6 @@ new Chart(document.getElementById("canvas"), {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             label: 'My First dataset',
-            backgroundColor: window.chartColors.red,
-            borderColor: window.chartColors.red,
             data: [
                 10,
                 20,
@@ -40,8 +37,6 @@ new Chart(document.getElementById("canvas"), {
         }, {
             label: 'My Second dataset',
             fill: false,
-            backgroundColor: window.chartColors.blue,
-            borderColor: window.chartColors.blue,
             data: [
                 40,
                 10,
@@ -54,6 +49,7 @@ new Chart(document.getElementById("canvas"), {
         }]
     },
     options: {
+        responsive: true,
         title: {
             display: true,
             text: 'Chart.js Line Chart'
