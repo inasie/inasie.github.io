@@ -27,13 +27,13 @@ tags:
                 backgroundColor: window.chartColors.red,
                 borderColor: window.chartColors.red,
                 data: [
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor()
+                    10,
+                    20,
+                    30,
+                    40,
+                    10,
+                    5,
+                    15
                 ],
                 fill: false,
             }, {
@@ -42,13 +42,13 @@ tags:
                 backgroundColor: window.chartColors.blue,
                 borderColor: window.chartColors.blue,
                 data: [
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor()
+                    40,
+                    10,
+                    50,
+                    60,
+                    10,
+                    35,
+                    72
                 ],
             }]
         },
