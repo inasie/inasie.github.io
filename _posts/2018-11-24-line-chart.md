@@ -15,20 +15,19 @@ tags:
 <canvas id="line-chart" width="600" height="800"></canvas>
 
 <script>
-data: [
-    {
-        x: 10,
-        y: 20
-    },
-    {
-        x: 15,
-        y: 10
-    }
-]
 var ctx = document.getElementById("line-chart");
 var myLineChart = new Chart(ctx, {
     type: 'line',
-    data: data,
+    data: [
+        {
+            x: 10,
+            y: 20
+        },
+        {
+            x: 15,
+            y: 10
+        }
+    ],
     options: {
         label: "라인 차트 테스트",
     }
