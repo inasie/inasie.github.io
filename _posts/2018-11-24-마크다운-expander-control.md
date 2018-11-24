@@ -22,14 +22,12 @@ tags:
 ```html
 <details>
 <summary>확장/축소 버튼</summary>
-<p>
 
 |제목|내용|
 |--|--|
 |테스트1|테스트1|
 |테스트2|테스트2|
 
-</p>
 </details>
 ```
 
@@ -37,12 +35,10 @@ tags:
 
 <details>
 <summary>확장/축소 버튼</summary>
-<p>
 
 |제목|내용|
 |--|--|
 |테스트1|테스트1|
 |테스트2|테스트2|
 
-</p>
 </details>
