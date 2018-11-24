@@ -3,7 +3,7 @@ title: 마크다운 - line chart 그리기
 date: 2018-11-24
 last_modified_at: 2018-11-24
 categories:
-- 프로그래밍
+- 마크다운
 tags:
 - 마크다운
 - markdown
