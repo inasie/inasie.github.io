@@ -20,12 +20,15 @@ tags:
 ## 코드
 
 ```html
+
 <details>
 <summary>확장/축소 버튼</summary>
+<div markdown="1">
 
 - 접을 내용
 - 접을 내용2
-  
+
+</div>
 </details>
 ```
 
@@ -33,10 +36,10 @@ tags:
 
 <details>
 <summary>확장/축소 버튼</summary>
-  
-{% markdown %}
+<div markdown="1">
+
 - 접을 내용
 - 접을 내용2
-{% endmarkdown %}
 
+</div>
 </details>
