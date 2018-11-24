@@ -47,11 +47,11 @@ new Chart(document.getElementById("canvas"), {
                 23,
                 10,
                 5,
-                15
+                50
             ],
             borderColor: "rgba(255, 201, 14, 0.5)",
             backgroundColor: "rgba(255, 201, 14, 1)",
-            fill: false,
+            fill: true,
         }]
     },
     options: {
@@ -111,11 +111,11 @@ new Chart(document.getElementById("canvas"), {
                 23,
                 10,
                 5,
-                15
+                50
             ],
             borderColor: "rgba(255, 201, 14, 0.5)",
             backgroundColor: "rgba(255, 201, 14, 1)",
-            fill: false,
+            fill: true,
         }]
     },
     options: {
