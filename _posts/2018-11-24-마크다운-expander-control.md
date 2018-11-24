@@ -25,8 +25,10 @@ tags:
 <summary>확장/축소 버튼</summary>
 <div markdown="1">
 
-- 접을 내용
-- 접을 내용2
+|제목|내용|
+|--|--|
+|1|1|
+|2|10|
 
 </div>
 </details>
@@ -38,8 +40,10 @@ tags:
 <summary>확장/축소 버튼</summary>
 <div markdown="1">
 
-- 접을 내용
-- 접을 내용2
+|제목|내용|
+|--|--|
+|1|1|
+|2|10|
 
 </div>
 </details>
