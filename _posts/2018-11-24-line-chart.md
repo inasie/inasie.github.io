@@ -49,8 +49,8 @@ new Chart(document.getElementById("canvas"), {
                 5,
                 50
             ],
-            borderColor: "rgba(255, 201, 14, 0.5)",
-            backgroundColor: "rgba(255, 201, 14, 1)",
+            borderColor: "rgba(255, 201, 14, 1)",
+            backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: true,
         }]
     },
@@ -113,8 +113,8 @@ new Chart(document.getElementById("canvas"), {
                 5,
                 50
             ],
-            borderColor: "rgba(255, 201, 14, 0.5)",
-            backgroundColor: "rgba(255, 201, 14, 1)",
+            borderColor: "rgba(255, 201, 14, 1)",
+            backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: true,
         }]
     },
