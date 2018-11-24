@@ -23,7 +23,8 @@ tags:
 <details>
 <summary>확장/축소 버튼</summary>
 
-접을 내용
+- 접을 내용
+- 접을 내용2
   
 </details>
 ```
@@ -33,8 +34,9 @@ tags:
 <details>
 <summary>확장/축소 버튼</summary>
   
-
+{% markdown %}
 - 접을 내용
-
+- 접을 내용2
+{% endmarkdown %}
 
 </details>
