@@ -74,6 +74,9 @@ new Chart(document.getElementById("canvas"), {
                 scaleLabel: {
                     display: true,
                     labelString: 'x축'
+                },
+                ticks: {
+                  autoSkip: false
                 }
             }],
             yAxes: [{
@@ -140,6 +143,9 @@ new Chart(document.getElementById("canvas"), {
                 scaleLabel: {
                     display: true,
                     labelString: 'x축'
+                },
+                ticks: {
+                  autoSkip: false
                 }
             }],
             yAxes: [{
