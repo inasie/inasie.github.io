@@ -31,13 +31,13 @@ line chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/l
 
 
 ```html
-<canvas id="canvas" width="800" height="600"></canvas>
+<canvas id="canvas"></canvas>
 
 <script>
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
-        labels: ['1', '2', '3', '4', '5', '6', '7'],
+        labels: ['가나다라마바사', '아자차카타파하', '거너더러머버서', '어저처커터퍼허', '고노도로모보소', '오조초코토포호', '구누두루무부수'],
         datasets: [{
             label: '테스트 데이터셋',
             data: [
@@ -95,13 +95,15 @@ new Chart(document.getElementById("canvas"), {
 
 ## 결과
 
-<canvas id="canvas" width="800" height="600"></canvas>
+<div style="width:100%;">
+<canvas id="canvas" ></canvas>
+</div>
 
 <script>
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
-        labels: ['1', '2', '3', '4', '5', '6', '7'],
+        labels: ['가나다라마바사', '아자차카타파하', '거너더러머버서', '어저처커터퍼허', '고노도로모보소', '오조초코토포호', '구누두루무부수'],
         datasets: [{
             label: '테스트 데이터셋',
             data: [
