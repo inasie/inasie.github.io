@@ -37,23 +37,6 @@ line chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/l
 
 <script>
   
-Chart.Scale = Chart.Element.extend({
-    initialize: function() {
-        this.xLabels = this.labelLength > 0 ? this.xLabels.map(this.truncateLabel, this) : this.xLabels;
-        this.fit();
-    },
-    truncateLabel: function(label) {
-        return label.substring(0, this.labelLength);
-    },
-
-    addXLabel: function(label) {
-        //also added here for when adding single items of data to a graph
-        this.xLabels.push(this.labelLength > 0 ? this.truncateLabel(label) : label);
-        this.valuesCount++;
-        this.fit();
-    }
-});
-  
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
@@ -113,8 +96,7 @@ new Chart(document.getElementById("canvas"), {
                     labelString: 'y축'
                 }
             }]
-        },
-        labelLength: 5
+        }
     }
 });
 
@@ -131,23 +113,6 @@ new Chart(document.getElementById("canvas"), {
 
 <script>
   
-Chart.Scale = Chart.Element.extend({
-    initialize: function() {
-        this.xLabels = this.labelLength > 0 ? this.xLabels.map(this.truncateLabel, this) : this.xLabels;
-        this.fit();
-    },
-    truncateLabel: function(label) {
-        return label.substring(0, this.labelLength);
-    },
-
-    addXLabel: function(label) {
-        //also added here for when adding single items of data to a graph
-        this.xLabels.push(this.labelLength > 0 ? this.truncateLabel(label) : label);
-        this.valuesCount++;
-        this.fit();
-    }
-});
-  
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
@@ -207,8 +172,7 @@ new Chart(document.getElementById("canvas"), {
                     labelString: 'y축'
                 }
             }]
-        },
-        labelLength: 5
+        }
     }
 });
 
