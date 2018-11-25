@@ -80,7 +80,12 @@ new Chart(document.getElementById("canvas"), {
                     labelString: 'x축'
                 },
                 ticks: {
-                  autoSkip: false
+                    callback: function(value) {
+                        if (value.length > 8)
+                          return value.substr(0, 5) + '...';
+                        return value;
+                    },
+                    autoSkip: false
                 }
             }],
             yAxes: [{
@@ -153,7 +158,12 @@ new Chart(document.getElementById("canvas"), {
                     labelString: 'x축'
                 },
                 ticks: {
-                  autoSkip: false
+                    callback: function(value) {
+                        if (value.length > 8)
+                            return value.substr(0, 5) + '...';
+                        return value;
+                    },
+                    autoSkip: false
                 }
             }],
             yAxes: [{
