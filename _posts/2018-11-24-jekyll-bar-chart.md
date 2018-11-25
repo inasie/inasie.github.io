@@ -70,6 +70,11 @@ new Chart(document.getElementById("canvas"), {
         tooltips: {
             mode: 'index',
             intersect: false,
+            callbacks: {
+                title: function(tooltipItems, data) {
+                    return = data.labels[tooltipItems[0].datasetIndex];
+                }
+            }
         },
         hover: {
             mode: 'nearest',
@@ -146,6 +151,11 @@ new Chart(document.getElementById("canvas"), {
         tooltips: {
             mode: 'index',
             intersect: false,
+            callbacks: {
+                title: function(tooltipItems, data) {
+                    return = data.labels[tooltipItems[0].datasetIndex];
+                }
+            }
         },
         hover: {
             mode: 'nearest',
