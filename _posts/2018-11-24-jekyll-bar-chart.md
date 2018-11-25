@@ -159,7 +159,13 @@ new Chart(document.getElementById("canvas"), {
                     labelString: 'x축'
                 },
                 ticks: {
-                    autoSkip: false
+                    autoSkip: false,
+                    callback: function(value, index, values) {
+                        if (value.length > 8)
+                          return value.substr(0, 5) + "...";
+                        else
+                          return value;
+                    }
                 }
             }],
             yAxes: [{
