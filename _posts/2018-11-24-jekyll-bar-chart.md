@@ -37,7 +37,7 @@ line chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/l
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
-        labels: ['가나다라마바사', '아자차카타파하', '거너더러머버서', '어저처커터퍼허', '고노도로모보소', '오조초코토포호', '구누두루무부수'],
+        labels: ['가가가가가가', '나나나나나나', '다다다다다다', '라라라라라라', '마마마', '바바바바바바바', '사사사사사사사사', '아아아아아아', '자자자자', '차차차차차차차', '카카카카카카카'],
         datasets: [{
             label: '테스트 데이터셋',
             data: [
@@ -47,7 +47,11 @@ new Chart(document.getElementById("canvas"), {
                 23,
                 10,
                 5,
-                15
+                15,
+                20,
+                13,
+                5,
+                9
             ],
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
@@ -106,7 +110,7 @@ new Chart(document.getElementById("canvas"), {
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
-        labels: ['가나다라마바사', '아자차카타파하', '거너더러머버서', '어저처커터퍼허', '고노도로모보소', '오조초코토포호', '구누두루무부수'],
+        labels: ['가가가가가가', '나나나나나나', '다다다다다다', '라라라라라라', '마마마', '바바바바바바바', '사사사사사사사사', '아아아아아아', '자자자자', '차차차차차차차', '카카카카카카카'],
         datasets: [{
             label: '테스트 데이터셋',
             data: [
@@ -116,7 +120,11 @@ new Chart(document.getElementById("canvas"), {
                 23,
                 10,
                 5,
-                15
+                15,
+                20,
+                13,
+                5,
+                9
             ],
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
