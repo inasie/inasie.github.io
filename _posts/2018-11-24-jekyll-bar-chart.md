@@ -72,7 +72,7 @@ new Chart(document.getElementById("canvas"), {
             intersect: false,
             callbacks: {
                 title: function(tooltipItems, data) {
-                    return = data.labels[tooltipItems[0].datasetIndex];
+                    return data.labels[tooltipItems[0].datasetIndex];
                 }
             }
         },
@@ -153,7 +153,7 @@ new Chart(document.getElementById("canvas"), {
             intersect: false,
             callbacks: {
                 title: function(tooltipItems, data) {
-                    return = data.labels[tooltipItems[0].datasetIndex];
+                    return data.labels[tooltipItems[0].datasetIndex];
                 }
             }
         },
