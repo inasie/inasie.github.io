@@ -35,7 +35,7 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 
 ```html
 <div style="width:100%;">
-<canvas id="canvas"></canvas>
+<canvas id="canvas" height="300"></canvas>
 </div>
 
 <script>
@@ -74,8 +74,8 @@ new Chart(document.getElementById("canvas"), {
             mode: 'index',
             intersect: false,
             callbacks: {
-                title: function(tooltipItems, data) {
-                    return data.labels[tooltipItems[0].datasetIndex];
+                label: function(tooltipItem, data) {
+                    return "value: " + data.labels[tooltipItem.index];
                 }
             }
         },
@@ -91,19 +91,19 @@ new Chart(document.getElementById("canvas"), {
                     labelString: 'x축'
                 },
                 ticks: {
-                    autoSkip: false,
-                    callback: function(value, index, values) {
-                        if (value.length > 8)
-                          return value.substr(0, 5) + "...";
-                        else
-                          return value;
-                    }
+                    suggestedMin: 0,
                 }
             }],
             yAxes: [{
                 display: true,
                 ticks: {
-                    suggestedMin: 0,
+                    autoSkip: false,
+                    callback: function(value, index, values) {
+                        if (value.length > 8)
+                            return value.substr(0, 5) + "...";
+                        else
+                            return value;
+                    }
                 },
                 scaleLabel: {
                     display: true,
@@ -115,6 +115,7 @@ new Chart(document.getElementById("canvas"), {
 });
 
 </script>
+
 ```
 </div>
 </details>
@@ -122,7 +123,7 @@ new Chart(document.getElementById("canvas"), {
 ## 결과
 
 <div style="width:100%;">
-<canvas id="canvas"></canvas>
+<canvas id="canvas" height="300"></canvas>
 </div>
 
 <script>
@@ -161,8 +162,8 @@ new Chart(document.getElementById("canvas"), {
             mode: 'index',
             intersect: false,
             callbacks: {
-                title: function(tooltipItems, data) {
-                    return data.labels[tooltipItems[0].datasetIndex];
+                label: function(tooltipItem, data) {
+                    return "value: " + data.labels[tooltipItem.index];
                 }
             }
         },
@@ -178,6 +179,12 @@ new Chart(document.getElementById("canvas"), {
                     labelString: 'x축'
                 },
                 ticks: {
+                    suggestedMin: 0,
+                }
+            }],
+            yAxes: [{
+                display: true,
+                ticks: {
                     autoSkip: false,
                     callback: function(value, index, values) {
                         if (value.length > 8)
@@ -185,12 +192,6 @@ new Chart(document.getElementById("canvas"), {
                         else
                           return value;
                     }
-                }
-            }],
-            yAxes: [{
-                display: true,
-                ticks: {
-                    suggestedMin: 0,
                 },
                 scaleLabel: {
                     display: true,
