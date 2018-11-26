@@ -35,7 +35,7 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 
 ```html
 <div style="width:100%;">
-<canvas id="canvas" height="300"></canvas>
+<canvas id="canvas"></canvas>
 </div>
 
 <script>
@@ -43,22 +43,10 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 new Chart(document.getElementById("canvas"), {
     type: 'horizontalBar',
     data: {
-        labels: ['가가가가가가가가가가가가가가', '나나나나나나', '다다다다다다', '라라라라라라', '마마마', '바바바바바바바', '사사사사사사사사', '아아아아아아', '자자자자', '차차차차차차차', '카카카카카카카'],
+        labels: ['가', '나', '다', '라', '마', '바', '사'],
         datasets: [{
             label: '테스트 데이터셋',
-            data: [
-                10,
-                3,
-                30,
-                23,
-                10,
-                5,
-                15,
-                20,
-                13,
-                5,
-                9
-            ],
+            data: [10, 3, 30, 23, 10, 5, 15],
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: false,
@@ -73,14 +61,6 @@ new Chart(document.getElementById("canvas"), {
         tooltips: {
             mode: 'index',
             intersect: false,
-            callbacks: {
-                title: function(tooltipItems, data) {
-                    return "data: ";
-                },
-                label: function(tooltipItem, data) {
-                    return [data.labels[tooltipItem.index], "value: " + tooltipItem.xLabel];
-                }
-            }
         },
         hover: {
             mode: 'nearest',
@@ -93,20 +73,11 @@ new Chart(document.getElementById("canvas"), {
                     display: true,
                     labelString: 'x축'
                 },
-                ticks: {
-                    suggestedMin: 0,
-                }
             }],
             yAxes: [{
                 display: true,
                 ticks: {
                     autoSkip: false,
-                    callback: function(value, index, values) {
-                        if (value.length > 8)
-                            return value.substr(0, 5) + "...";
-                        else
-                            return value;
-                    }
                 },
                 scaleLabel: {
                     display: true,
@@ -126,7 +97,7 @@ new Chart(document.getElementById("canvas"), {
 ## 결과
 
 <div style="width:100%;">
-<canvas id="canvas" height="300"></canvas>
+<canvas id="canvas"></canvas>
 </div>
 
 <script>
@@ -134,22 +105,10 @@ new Chart(document.getElementById("canvas"), {
 new Chart(document.getElementById("canvas"), {
     type: 'horizontalBar',
     data: {
-        labels: ['가가가가가가가가가가가가가가', '나나나나나나', '다다다다다다', '라라라라라라', '마마마', '바바바바바바바', '사사사사사사사사', '아아아아아아', '자자자자', '차차차차차차차', '카카카카카카카'],
+        labels: ['가', '나', '다', '라', '마', '바', '사'],
         datasets: [{
             label: '테스트 데이터셋',
-            data: [
-                10,
-                3,
-                30,
-                23,
-                10,
-                5,
-                15,
-                20,
-                13,
-                5,
-                9
-            ],
+            data: [10, 3, 30, 23, 10, 5, 15],
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: false,
@@ -164,14 +123,6 @@ new Chart(document.getElementById("canvas"), {
         tooltips: {
             mode: 'index',
             intersect: false,
-            callbacks: {
-                title: function(tooltipItems, data) {
-                    return "data: ";
-                },
-                label: function(tooltipItem, data) {
-                    return [data.labels[tooltipItem.index], "value: " + tooltipItem.xLabel];
-                }
-            }
         },
         hover: {
             mode: 'nearest',
@@ -184,20 +135,11 @@ new Chart(document.getElementById("canvas"), {
                     display: true,
                     labelString: 'x축'
                 },
-                ticks: {
-                    suggestedMin: 0,
-                }
             }],
             yAxes: [{
                 display: true,
                 ticks: {
                     autoSkip: false,
-                    callback: function(value, index, values) {
-                        if (value.length > 8)
-                            return value.substr(0, 5) + "...";
-                        else
-                            return value;
-                    }
                 },
                 scaleLabel: {
                     display: true,
