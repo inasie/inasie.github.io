@@ -279,9 +279,9 @@ defaults:
       related: true
   - scope:
       path: "_pages"
-      type: single
+      type: pages
     values:
-      layout: wide
+      layout: single
       author_profile: true
 
 head_scripts:
