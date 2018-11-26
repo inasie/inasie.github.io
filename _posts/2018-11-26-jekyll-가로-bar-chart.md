@@ -74,8 +74,11 @@ new Chart(document.getElementById("canvas"), {
             mode: 'index',
             intersect: false,
             callbacks: {
+                title: function(tooltipItems, data) {
+                    return "data: ";
+                },
                 label: function(tooltipItem, data) {
-                    return "value: " + data.labels[tooltipItem.index];
+                    return [data.labels[tooltipItem.index], "value: " + tooltipItem.xLabel];
                 }
             }
         },
@@ -162,8 +165,11 @@ new Chart(document.getElementById("canvas"), {
             mode: 'index',
             intersect: false,
             callbacks: {
+                title: function(tooltipItems, data) {
+                    return "data: ";
+                },
                 label: function(tooltipItem, data) {
-                    return "value: " + data.labels[tooltipItem.index];
+                    return [data.labels[tooltipItem.index], "value: " + tooltipItem.xLabel];
                 }
             }
         },
@@ -188,9 +194,9 @@ new Chart(document.getElementById("canvas"), {
                     autoSkip: false,
                     callback: function(value, index, values) {
                         if (value.length > 8)
-                          return value.substr(0, 5) + "...";
+                            return value.substr(0, 5) + "...";
                         else
-                          return value;
+                            return value;
                     }
                 },
                 scaleLabel: {
