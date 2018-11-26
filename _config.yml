@@ -279,7 +279,7 @@ defaults:
       related: true
   - scope:
       path: "_pages"
-      type: pages
+      type: single
     values:
       layout: wide
       author_profile: true
