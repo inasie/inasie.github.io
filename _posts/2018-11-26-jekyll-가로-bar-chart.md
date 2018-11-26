@@ -35,13 +35,13 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 
 ```html
 <div style="width:100%;">
-<canvas id="canvas" height="700"></canvas>
+<canvas id="canvas"></canvas>
 </div>
 
 <script>
   
 new Chart(document.getElementById("canvas"), {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
         labels: ['가가가가가가가가가가가가가가', '나나나나나나', '다다다다다다', '라라라라라라', '마마마', '바바바바바바바', '사사사사사사사사', '아아아아아아', '자자자자', '차차차차차차차', '카카카카카카카'],
         datasets: [{
@@ -122,13 +122,13 @@ new Chart(document.getElementById("canvas"), {
 ## 결과
 
 <div style="width:100%;">
-<canvas id="canvas" height="700"></canvas>
+<canvas id="canvas"></canvas>
 </div>
 
 <script>
   
 new Chart(document.getElementById("canvas"), {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
         labels: ['가가가가가가가가가가가가가가', '나나나나나나', '다다다다다다', '라라라라라라', '마마마', '바바바바바바바', '사사사사사사사사', '아아아아아아', '자자자자', '차차차차차차차', '카카카카카카카'],
         datasets: [{
