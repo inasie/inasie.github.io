@@ -31,7 +31,9 @@ line chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/l
 
 
 ```html
-<canvas id="canvas" width="800" height="600"></canvas>
+<div style="width:100%;">
+  <canvas id="canvas" height="300"></canvas>
+</div>
 
 <script>
 new Chart(document.getElementById("canvas"), {
@@ -95,7 +97,9 @@ new Chart(document.getElementById("canvas"), {
 
 ## 결과
 
-<canvas id="canvas" width="800" height="600"></canvas>
+<div style="width:100%;">
+  <canvas id="canvas" height="300"></canvas>
+</div>
 
 <script>
 new Chart(document.getElementById("canvas"), {
