@@ -43,10 +43,10 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 new Chart(document.getElementById("canvas"), {
     type: 'horizontalBar',
     data: {
-        labels: ['가', '나', '다', '라', '마', '바', '사'],
+        labels: ['가', '나', '다', '라', '마', '바', '사', '아', '자', '차', '카', '타', '파', '하'],
         datasets: [{
             label: '테스트 데이터셋',
-            data: [10, 3, 30, 23, 10, 5, 15],
+            data: [10, 3, 30, 23, 10, 5, 15, 25, 2, 4, 1, 13, 52, 23],
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: false,
@@ -105,10 +105,10 @@ new Chart(document.getElementById("canvas"), {
 new Chart(document.getElementById("canvas"), {
     type: 'horizontalBar',
     data: {
-        labels: ['가', '나', '다', '라', '마', '바', '사'],
+        labels: ['가', '나', '다', '라', '마', '바', '사', '아', '자', '차', '카', '타', '파', '하'],
         datasets: [{
             label: '테스트 데이터셋',
-            data: [10, 3, 30, 23, 10, 5, 15],
+            data: [10, 3, 30, 23, 10, 5, 15, 25, 2, 4, 1, 13, 52, 23],
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: false,
