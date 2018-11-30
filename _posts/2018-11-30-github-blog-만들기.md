@@ -35,7 +35,7 @@ clone없이 바로 사용하는 방법은 [이 포스트](https://inasie.github.
 
 빈 repository가 생성되었습니다.
 
-![1](/assets/images/2018-11-30-github-blog-만들기/1.png)
+![1](https://inasie.github.io/images/2018-11-30-github-blog-만들기/1.png)
 
 ## 2. Page 접속 설정
 
@@ -45,7 +45,7 @@ github page 기능을 사용하기 위해서는 repository 설정이 필요합�
 
 repostory Settings 메뉴에 들어갑니다.
 
-![2](/assets/images/2018-11-30-github-blog-만들기/2.png)
+![2](https://inasie.github.io/images/2018-11-30-github-blog-만들기/2.png)
 
 Option항목의 하단부로 내려가면 GitHub Pages 항목이 있습니다.
 
@@ -54,11 +54,11 @@ Source 가 'None'으로 되어있는데 master branch로 변경해줍니다.
 
 그리고 Choose theme를 할 수 있는데, 저는 여기에 없는 다른 jekyll theme를 사용할 것이므로 무시하고 save를 누릅니다.
 
-![3](/assets/images/2018-11-30-github-blog-만들기/3.png)
+![3](https://inasie.github.io/images/2018-11-30-github-blog-만들기/3.png)
 
 save를 누르고 나면 Github Pages항목에 'Your site is ready to be published at xxx' 문구가 생긴것을 볼 수 있습니다.<br>
 
-![4](/assets/images/2018-11-30-github-blog-만들기/4.png)
+![4](https://inasie.github.io/images/2018-11-30-github-blog-만들기/4.png)
 
 아직 별다른 내용이 없기 때문에 링크를 들어가면 README.md에 작성된 내용이 보여집니다.
 
@@ -72,7 +72,7 @@ save를 누르고 나면 Github Pages항목에 'Your site is ready to be publish
 
 theme를 결정하였으면 Homepage에 접속합니다.
 
-![5](/assets/images/2018-11-30-github-blog-만들기/5.png)
+![5](https://inasie.github.io/images/2018-11-30-github-blog-만들기/5.png)
 
 그럼 위와같이 _includes, _layouts, _posts, ... 와 같이 repository가 구성되어 있는 것이 보입니다.
 
@@ -154,7 +154,7 @@ git push
 
 https://{id}.github.io/{repostitory} 에 접속하여 blog가 제대로 보이는지 확인합니다.
 
-![6](/assets/images/2018-11-30-github-blog-만들기/6.png)
+![6](https://inasie.github.io/images/2018-11-30-github-blog-만들기/6.png)
 
 제가 clone 한 jekyll-uno의 경우 _posts에 글 하나가 작성되어있어 blog를 눌러보면 해당 포스트가 보입니다.
 
@@ -204,7 +204,7 @@ git push
 
 > 글 포멧이 잘못되어 페이지 생성 시 에러가 난 경우 에러 내용에 대한 메일이 날라옵니다.
 
-![7](/assets/images/2018-11-30-github-blog-만들기/7.png)
+![7](https://inasie.github.io/images/2018-11-30-github-blog-만들기/7.png)
 
 ## 8. 결론
 
