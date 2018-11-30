@@ -31,12 +31,12 @@ line chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/l
 
 
 ```html
-<div style="width:100%;">
+<div style="width:800px;">
 <canvas id="canvas" ></canvas>
 </div>
 
 <script>
-  
+
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
@@ -112,12 +112,12 @@ new Chart(document.getElementById("canvas"), {
 
 ## 결과
 
-<div style="width:100%;">
+<div style="width:800px;">
 <canvas id="canvas" ></canvas>
 </div>
 
 <script>
-  
+
 new Chart(document.getElementById("canvas"), {
     type: 'bar',
     data: {
