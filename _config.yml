@@ -43,5 +43,8 @@ font_heading: "'Roboto Slab', 'Nanum Gothic', Helvetica, Arial, sans-serif"
 font: "'Noto Sans', 'Nanum Gothic', Helvetica, Arial, sans-serif"
 google_fonts: Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
-plugins: ['jekyll-paginate', 'jekyll-sitemap']
+plugins: ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-include-cache'. 'jekyll-gist']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+head_scripts:
+  - https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js
