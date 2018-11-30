@@ -53,7 +53,7 @@ new Chart(document.getElementById("canvas"), {
         }]
     },
     options: {
-        responsive: false,
+        responsive: true,
         title: {
             display: true,
             text: '막대 차트 테스트'
@@ -115,7 +115,7 @@ new Chart(document.getElementById("canvas"), {
         }]
     },
     options: {
-        responsive: false,
+        responsive: true,
         title: {
             display: true,
             text: '막대 차트 테스트'
