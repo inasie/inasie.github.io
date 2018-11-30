@@ -31,7 +31,7 @@ line chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/l
 
 
 ```html
-<div style="width:800px;">
+<div style="width:800px;height:400px;">
   <canvas id="canvas" height="300"></canvas>
 </div>
 
@@ -57,7 +57,7 @@ new Chart(document.getElementById("canvas"), {
         }]
     },
     options: {
-        responsive: true,
+        responsive: false,
         title: {
             display: true,
             text: '라인 차트 테스트'
@@ -97,7 +97,7 @@ new Chart(document.getElementById("canvas"), {
 
 ## 결과
 
-<div style="width:800px;">
+<div style="width:800px;height:400px;">
   <canvas id="canvas" height="300"></canvas>
 </div>
 
@@ -123,7 +123,7 @@ new Chart(document.getElementById("canvas"), {
         }]
     },
     options: {
-        responsive: true,
+        responsive: false,
         title: {
             display: true,
             text: '라인 차트 테스트'

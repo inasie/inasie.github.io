@@ -34,7 +34,7 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 <div markdown="1">
 
 ```html
-<div style="width:800px;">
+<div style="width:800px;height:400px;">
 <canvas id="canvas"></canvas>
 </div>
 
@@ -53,7 +53,7 @@ new Chart(document.getElementById("canvas"), {
         }]
     },
     options: {
-        responsive: true,
+        responsive: false,
         title: {
             display: true,
             text: '막대 차트 테스트'
@@ -96,7 +96,7 @@ new Chart(document.getElementById("canvas"), {
 
 ## 결과
 
-<div style="width:800px;">
+<div style="width:800px;height:400px;">
 <canvas id="canvas"></canvas>
 </div>
 
@@ -115,7 +115,7 @@ new Chart(document.getElementById("canvas"), {
         }]
     },
     options: {
-        responsive: true,
+        responsive: false,
         title: {
             display: true,
             text: '막대 차트 테스트'
