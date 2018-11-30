@@ -34,7 +34,7 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 <div markdown="1">
 
 ```html
-<div style="width:800px;height:400px;">
+<div style="width:100%;">
 <canvas id="canvas"></canvas>
 </div>
 
@@ -96,7 +96,7 @@ new Chart(document.getElementById("canvas"), {
 
 ## 결과
 
-<div style="width:800px;height:400px;">
+<div style="width:100%;">
 <canvas id="canvas"></canvas>
 </div>
 
