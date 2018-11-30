@@ -98,7 +98,7 @@ new Chart(document.getElementById("canvas"), {
 ## 결과
 
 <div style="width:100%;">
-  <canvas id="canvas"></canvas>
+  <canvas id="canvas" height="300"></canvas>
 </div>
 
 <script>

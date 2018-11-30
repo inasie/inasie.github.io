@@ -35,7 +35,7 @@ bar chart에 대한 자세한 옵션은 [여기](https://www.chartjs.org/docs/la
 
 ```html
 <div style="width:100%;">
-<canvas id="canvas"></canvas>
+<canvas id="canvas" height="300"></canvas>
 </div>
 
 <script>
@@ -97,7 +97,7 @@ new Chart(document.getElementById("canvas"), {
 ## 결과
 
 <div style="width:100%;">
-<canvas id="canvas"></canvas>
+<canvas id="canvas" height="300"></canvas>
 </div>
 
 <script>
