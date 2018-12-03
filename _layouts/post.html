@@ -3,7 +3,6 @@ layout: default
 ---
 <article class="post-container post-container--single">
   <header class="post-header">
-    {% include google-ad.html %}
     <div class="post-meta">
       <time datetime="{{ page.date | date: "%Y-%m-%d %H:%M" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
       {% if page.tags.size > 0 %}
@@ -14,7 +13,6 @@ layout: default
   </header>
 
   <section class="post">
-    
     {{ content }}
   </section>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
