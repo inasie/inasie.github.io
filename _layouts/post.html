@@ -13,10 +13,9 @@ layout: default
   </header>
 
   <section class="post">
+    {% include header-ad.html %}
     {{ content }}
-    <p>
-      {% include ad.html %}
-    </p>
+    {% include footer-ad.html %}
   </section>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
