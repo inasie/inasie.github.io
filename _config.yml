@@ -4,7 +4,7 @@ description: 'IT/프로그래밍/부동산 이것저것 하는 블로그'
 url: 'https://inasie.github.io'
 baseurl: '/'
 google_analytics: 'UA-129074475-2'
-disqus_shortname: 'inasie-github-io'
+disqus_shortname: # 'inasie-github-io'
 
 author:
   name: 'inasie'
