@@ -46,7 +46,7 @@ footer-links:
 # Text under the icons in footer
 footer-text:
 
-disqus: inasie-github-io # <username>.disqus.com
+disqus: # inasie-github-io # <username>.disqus.com
 google_analytics: 'UA-129074475-2'
 
 url: 'https://inasie.github.io'
