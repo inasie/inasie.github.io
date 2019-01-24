@@ -16,6 +16,8 @@ navigation:
     url: /
   - name: Tags
     url: /tags
+  - name: Search
+    url: /search
   # - name: Archive
   #   url: /archive
   # - name: Theme
