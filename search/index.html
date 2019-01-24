@@ -17,9 +17,9 @@ permalink: /search/
 <script>
   window.store = {
     {% for post in site.posts %}
-    "{{ post.url | slugify }}": {
-      "title": "{{ post.title | xml_escape }}"
-    }
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}"
+      }
     {% unless forloop.last %}, {% endunless %}
     {% endfor %}
   };

@@ -11,6 +11,7 @@
           appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
         }
 
+        appendString += "<li>결과있음</li>"
         searchResults.innerHTML = appendString;
       } else {
         searchResults.innerHTML = '<li>No results found</li>';
