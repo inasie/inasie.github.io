@@ -1,9 +1,11 @@
 ---
 layout: search
+title: Search
+permalink: /search/
 ---
 
-<form action="{{ site.baseurl }}/search.html" method="get">
-  <label for="search-box">Search</label>
+<form action="{{ site.baseurl }}/search/index.html" method="get">
+  <label for="search-box">검색</label>
   <input type="text" id="search-box" name="query">
   <input type="submit" value="search">
 </form>
@@ -25,5 +27,5 @@ layout: search
   };
 </script>
 
-<script src="/js/lunr.min.js" charset="utf-8"></script>
-<script src="/js/search.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/lunr.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/search.js" charset="utf-8"></script>
