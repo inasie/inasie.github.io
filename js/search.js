@@ -40,17 +40,17 @@
       var idx = new lunr.Index;
       idx.field('id');
       idx.field('title', { boost: 10 });
-    //   idx.field('author');
-    //   idx.field('category');
-    //   idx.field('content');
+      idx.field('author');
+      idx.field('category');
+      idx.field('content');
 
       for (var key in window.store) { // Add the data to lunr
         idx.add({
           'id': key,
           'title': window.store[key].title,
-        //   'author': window.store[key].author,
-        //   'category': window.store[key].category,
-        //   'content': window.store[key].content
+          'author': window.store[key].author,
+          'category': window.store[key].category,
+          'content': window.store[key].content
         });
 
         var results = idx.search(searchTerm); // Get lunr to perform a search
