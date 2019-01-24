@@ -7,14 +7,11 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<div class="search__result"><a href="' + item.url + '"><h5 class="post-title">' + item.title + '</h5></a>';
-        appendString += '<div class="post-description"><small class="post-date">' + item.published_at + '</small></div>';
-        appendString += '</div>'
+        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
       }
-
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<li>No results found</li>';
+      searchResults.innerHTML = '<li>검색 결과 없음</li>';
     }
   }
 

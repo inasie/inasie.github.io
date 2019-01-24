@@ -5,20 +5,18 @@ permalink: /search/
 ---
 
 <form action="{{ site.baseurl }}/search/index.html" method="get">
-  <label for="search-box">search</label>
+  <label for="search-box">검색어: </label>
   <input type="text" id="search-box" name="query">
-  <input type="submit" value="search">
+  <input type="submit" value="검색">
 </form>
 
-<div id="search-results"></div>
+<ul id="search-results"></ul>
 
 <script>
   window.store = {
     {% for post in site.posts %}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
-        "category": "{{ post.categories | xml_escape }}",
-        "published_at" : "{{post.date | date: '%b %d, %y' }}",
         "url": "{{ post.url | xml_escape }}"
       }
       {% unless forloop.last %},{% endunless %}
