@@ -54,6 +54,7 @@ new Chart(document.getElementById("canvas"), {
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: true,
+            lineTension: 0
         }]
     },
     options: {
@@ -120,6 +121,7 @@ new Chart(document.getElementById("canvas"), {
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
             fill: true,
+            lineTension: 0
         }]
     },
     options: {
