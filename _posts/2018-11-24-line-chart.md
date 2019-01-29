@@ -120,7 +120,23 @@ new Chart(document.getElementById("canvas"), {
             ],
             borderColor: "rgba(255, 201, 14, 1)",
             backgroundColor: "rgba(255, 201, 14, 0.5)",
-            fill: true,
+            fill: false,
+            lineTension: 0
+        },{
+            label: '데이터셋2',
+            pointRadius: 1,
+            data: [
+                3,
+                10,
+                10,
+                13,
+                30,
+                2,
+                30
+            ],
+            borderColor: "rgba(0, 141, 185, 1)",
+            backgroundColor: "rgba(0, 141, 185, 0.5)",
+            fill: false,
             lineTension: 0
         }]
     },
